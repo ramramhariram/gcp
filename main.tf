@@ -11,4 +11,5 @@ module "aws_transit_1" {
   iam_role         = var.iam_role
   bootstrap_bucket_name = var.bootstrap_bucket_name
   egress_enabled   = var.egress_enabled
+  fw_instance_size = var.fw_instance_size
 }
