@@ -6,7 +6,7 @@ module "aws_transit_1" {
   cidr             = var.cidr
   region           = var.region
   account          = var.account
-  name             = var.name
+  #name             = var.name
   firewall_image   = var.firewall_image
   iam_role         = var.iam_role
   bootstrap_bucket_name = var.bootstrap_bucket_name
