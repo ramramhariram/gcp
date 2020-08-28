@@ -1,7 +1,7 @@
 # AWS Transit Module
 module "aws_transit_1" {
   source           = "terraform-aviatrix-modules/terraform-aviatrix-aws-transit-firenet"
-  version          = "1.0.1"
+  #version          = "1.0.1"
   ha_gw            = true
   cidr             = var.cidr
   region           = var.region
