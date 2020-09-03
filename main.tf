@@ -30,7 +30,7 @@ module "gcp_transit_1" {
 module "gcp_spoke_1" {
   source           = "github.com/terraform-aviatrix-modules/terraform-aviatrix-gcp-spoke"
   #version         = "1.0.1"
-  name = avx-gcp-spoke 
+  name = "avx-gcp-spoke" 
   account = var.gcp_account_name
   region = var.gcp_spoke_region
   cidr = var.gcp_spoke_sub1_cidr
