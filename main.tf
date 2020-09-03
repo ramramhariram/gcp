@@ -28,12 +28,12 @@ module "gcp_transit_1" {
 
 # GCP Spoke Module
 module "gcp_spoke_1" {
-  source           = " github.com/terraform-aviatrix-modules/terraform-aviatrix-gcp-spoke"
+  source           = "github.com/terraform-aviatrix-modules/terraform-aviatrix-gcp-spoke"
   #version         = "1.0.1"
   gcp_account_name = var.gcp_account_name
   gcp_spoke_region = var.gcp_spoke_region
   gcp_spoke_sub1_cidr = var.gcp_spoke_sub1_cidr
-  transit_gateway = module.gcp_transit_1.transit_gateway
+  transit_gateway = module.gcp_transit_1.transit_gateway.gw_name
 }
 
 
