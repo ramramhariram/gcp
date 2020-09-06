@@ -18,7 +18,7 @@ module "gcp_spoke_1" {
   account = var.gcp_account_name
   region = var.gcp_spoke_region
   cidr = var.gcp_spoke_cidr
-  transit_gw = module.gcp_transit_1.transit_gw
+  transit_gw = module.gcp_transit_1.transit_gateway
   ha_region = var.gcp_spoke_ha_region
   ha_cidr = var.gcp_spoke_ha_cidr
   ha_gw = true 
