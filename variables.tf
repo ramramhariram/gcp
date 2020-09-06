@@ -7,10 +7,14 @@ variable "username" {
 variable "password" {
 }
 
-variable "gcp_second_region" {}
-variable "gcp_sub1_cidr"{} 
-variable "gcp_sub2_cidr" {}
-variable "gcp_primary_region" {}
+variable "gcp_ha_region" {}
+variable "gcp_cidr"{} 
+variable "gcp_ha_cidr" {}
+variable "gcp_region" {}
 variable "gcp_account_name" {}
+
 variable "gcp_spoke_region" {}
-variable "gcp_spoke_sub1_cidr" {}
+variable "gcp_spoke_ha_cidr" {}
+variable "gcp_spoke_region" {}
+variable "gcp_spoke_cidr" {}
+variable "gcp_spoke_ha_region" {}
